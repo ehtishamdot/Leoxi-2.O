@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Noto+Sans+JP:wght@400;700&family=Open+Sans&display=swap");
+
+@font-face {
+  font-family: digital;
+  src: url(./assets/fonts/digital-7/digital-7.ttf);
+}
+/* :root {
+  --bs-blue: #2361ce;
+  --bs-pink: #ef4683;
+  --bs-red: #e11d48;
+  --bs-orange: #fba918;
+  --bs-yellow: #f3c78e;
+  --bs-green: #10b981;
+  --bs-teal: #1e90ff;
+  --bs-cyan: #63b1bd;
+  --bs-gray: #4b5563;
+  --bs-soft: #e5e7eb;
+  --bs-gray-dark: #1f2937;
+  --bs-primary: #262b40;
+  --bs-secondary: #61dafb;
+  --bs-secondary-alt: #acebfd;
+  --bs-tertiary: #1b998b;
+  --bs-success: #10b981;
+  --bs-info: #2361ce;
+  --bs-warning: #fba918;
+  --bs-danger: #e11d48;
+  --bs-white: #fff;
+  --bs-indigo: #4f46e5;
+  --bs-purple: #7c3aed;
+  --bs-yellow-100: #ffeed6;
+  --bs-yellow-200: #f5dbb8;
+  --bs-gray-50: #f9fafb;
+  --bs-gray-100: #f2f4f6;
+  --bs-gray-200: #e5e7eb;
+  --bs-gray-300: #d1d5db;
+  --bs-gray-400: #9ca3af;
+  --bs-gray-500: #6b7280;
+  --bs-gray-600: #4b5563;
+  --bs-gray-700: #374151;
+  --bs-gray-800: #1f2937;
+  --bs-gray-900: #111827;
+  --bs-primary-rgb: 38, 43, 64;
+  --bs-secondary-rgb: 97, 218, 251;
+  --bs-secondary-alt-rgb: 172, 235, 253;
+  --bs-tertiary-rgb: 27, 153, 139;
+  --bs-success-rgb: 16, 185, 129;
+  --bs-info-rgb: 35, 97, 206;
+  --bs-warning-rgb: 251, 169, 24;
+  --bs-danger-rgb: 225, 29, 72;
+  --bs-indigo-rgb: 79, 70, 229;
+  --bs-purple-rgb: 124, 58, 237;
+  --bs-yellow-100-rgb: 255, 238, 214;
+  --bs-yellow-200-rgb: 245, 219, 184;
+  --bs-gray-50-rgb: 249, 250, 251;
+  --bs-gray-100-rgb: 242, 244, 246;
+  --bs-gray-200-rgb: 229, 231, 235;
+  --bs-gray-300-rgb: 209, 213, 219;
+  --bs-gray-400-rgb: 156, 163, 175;
+  --bs-gray-500-rgb: 107, 114, 128;
+  --bs-gray-600-rgb: 75, 85, 99;
+  --bs-gray-700-rgb: 55, 65, 81;
+  --bs-gray-800-rgb: 31, 41, 55;
+  --bs-gray-900-rgb: 17, 24, 39;
+  --bs-white-rgb: 255, 255, 255;
+  --bs-black-rgb: 17, 24, 39;
+  --bs-body-color-rgb: 55, 65, 81;
+  --bs-body-bg-rgb: 242, 244, 246;
+  --bs-font-sans-serif: "Inter", sans-serif;
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    hsla(0, 0%, 100%, 0.15),
+    hsla(0, 0%, 100%, 0)
+  );
+  --bs-body-font-family: var(--bs-font-sans-serif);
+  --bs-body-font-size: 1rem;
+  --bs-body-font-weight: 400;
+  --bs-body-line-height: 1.5;
+  --bs-body-color: #374151;
+  --bs-body-bg: #f2f4f6;
+  --bs-secondary: #61dafb;
+} */
+:root {
+  --bs-primary: #262b40;
+  --bs-bg-main: #f8f9fa;
+  --bs-status-color: #262b40;
+  --bs-color-nav: #262b40;
+  --bs-hover: #d4d4db;
+  --bs-red: #e11d48;
+  --bs-green: #10b981;
+  --bs-secondary: #61dafb;
+  --bs-box-shadow: rgba(56, 54, 54, 0.55);
+  --bs-font-Inter: "Inter", sans-serif;
+  --bs-font-SansJP: "Noto Sans JP", sans-serif;
+  --bs-font-Sans: "Open Sans", sans-serif;
+  --bs-font-Digital: "digital", sans-serif;
+}
+
+[data-theme="dark"] {
+  --bs-primary: #f8f9fa;
+  --bs-bg-main: #0e0e0f;
+  --bs-status-color: #f8f9fa;
+  --bs-bg-nav: #f8f9fa;
+  --bs-color-nav: #f8f9fa;
+  --bs-hover: rgba(251, 243, 243, 0.25);
+  --bs-low-hover: rgba(251, 243, 243, 0.5);
+  --bs-box-shadow: rgba(56, 54, 54, 0.55);
+  --bs-red: #e11d48;
+  --bs-green: #10b981;
+  --bs-font-Inter: "Inter", sans-serif;
+  --bs-font-SansJP: "Noto Sans JP", sans-serif;
+  --bs-font-Sans: "Open Sans", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--bs-font-SansJP);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: var(--bs-bg-main);
+  z-index: 1000000;
+}
+
+#root {
+  background: var(--bs-bg-main);
+}
+
+a {
+  text-decoration: none;
+}
+
+.centered {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.focused {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.btn-disabled {
+  background-color: var(--bs-hover) !important;
+  cursor: default !important;
+  color: red;
+}

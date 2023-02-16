@@ -1,0 +1,38 @@
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.user-skeleton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.3em;
+}
+
+.user:hover {
+  background-color: var(--bs-hover);
+  transition: background 0.3s ease-in-out;
+}
+
+.user img {
+  width: 4rem;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.user-skeleton .right-col{
+  margin-left: .8rem;
+}
+
+.user h3 {
+  font-weight: 300;
+}
+
+.user span {
+  font-weight: 700;
+}

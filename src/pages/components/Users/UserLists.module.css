@@ -1,0 +1,54 @@
+.users {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.card-handler {
+  margin: auto;
+  
+}
+
+.setting {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.sell,
+.buy {
+  text-align: center;
+  font-size: 4rem;
+  font-family: var(--bs-font-Digital);
+}
+
+.sell {
+  color: var(--bs-red);
+}
+
+.buy {
+  color: var(--bs-green);
+}
+
+@media (max-width: 1584px) {
+  .users {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 1092px) {
+  .users {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 882px) {
+  .users {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 552px) {
+  .users {
+    grid-template-columns: 1fr;
+  }
+}

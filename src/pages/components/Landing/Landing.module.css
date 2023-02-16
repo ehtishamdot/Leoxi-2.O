@@ -1,0 +1,25 @@
+.landing {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.container {
+  height: 100%;
+}
+
+.logo-icon {
+  width: 90%;
+  border-radius: 50%;
+}
+
+.price {
+  margin-top: 4rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #1b7052;
+  font-family: var(--bs-font-Inter);
+}
+
+

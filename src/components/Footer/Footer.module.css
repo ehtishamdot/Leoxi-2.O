@@ -1,0 +1,13 @@
+.footer-logo {
+  font-family: var(--bs-font-Digital);
+  font-size: 3.5rem;
+  font-weight: 700;
+  display: block;
+  position: absolute;
+  /* margin: 1rem 0; */
+  text-align: center;
+  /* border: 0; */
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}

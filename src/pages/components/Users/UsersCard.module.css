@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 0 0 0;
+}
+
+@media (max-width: 1092px) {
+  .card {
+    flex-direction: column;
+  }
+}

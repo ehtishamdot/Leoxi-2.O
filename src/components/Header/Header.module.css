@@ -1,0 +1,96 @@
+.header {
+  background-color: var(--bs-bg-main) !important;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: var(--bs-box-shadow) 0px 4px 12px;
+  padding: 0 2rem;
+}
+
+.burger-handler {
+  font-size: 2rem;
+  background: none;
+  cursor: pointer;
+}
+
+.logout-handler {
+  font-size: 2.5rem;
+  background: none;
+  cursor: pointer;
+}
+
+.pocket-status {
+  display: flex;
+}
+
+.button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background-color: var(--bs-hover);
+  color: var(--bs-status-color);
+  padding: 0.75rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 25px;
+  font-weight: bold;
+  margin: 0 1rem;
+}
+
+@media (max-width: 638px) {
+  .btn-money {
+    display: none;
+  }
+}
+
+@media (max-width: 456px) {
+  .button {
+    padding: 0.55rem 1.5rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .button {
+    display: none;
+  }
+}
+
+.icon {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin-right: 0.5rem;
+  color: var(--bs-status-color) !important;
+}
+
+.badge {
+  background-color: var(--bs-bg-main);
+  padding: 0.25rem 1rem;
+  border-radius: 25px;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: var(--bs-primary);
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
